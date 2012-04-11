@@ -1,0 +1,24 @@
+.footer, .push {  height: 56px; }
+
+.footer { background-color: #3a3b3d }
+
+.footerInner {
+	margin: 0 auto;
+	padding: 14px 0 0 0;
+	width: 1036px;
+	
+	li {
+		float: left;
+		margin-right: 14px;
+	}
+			
+	a { 
+		color: rgb(255,255,255);
+		font-size: 14px;
+		padding-bottom: 2px; 
+		
+		&:hover { border-bottom: 1px solid rgb(255,255,255) }
+	}
+}
+
+.foot-home { float: right; margin: 2px 0 0 0; }

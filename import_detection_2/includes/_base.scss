@@ -1,0 +1,110 @@
+/* =============================================================================
+   Base
+   ========================================================================== */
+html { font-size: 100%; -webkit-text-size-adjust: 100%; }
+
+html, body { height: 100%; }
+
+body {
+	background-color: #ebebeb;
+	color: rgb(55,66,72);
+	font-family: depot-new-web,sans-serif;
+	font-size: 13px;
+	line-height: 1.231;
+	margin: 0;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -56px;
+}
+
+.inner-grid {
+	background-color: rgb(255,255,255);
+	border-radius: 3px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+	margin: 28px auto;
+	overflow: hidden;
+	padding: 26px;
+	position: relative;
+	width: 980px;
+	z-index: 1;
+}
+
+.footer, .push { height: 56px; }
+
+::-moz-selection { background: rgb(66,79,87); color: #fff; text-shadow: none; }
+::selection { background: rgb(66,79,87); color: #fff; text-shadow: none; }
+
+::-webkit-input-placeholder { color: gray }
+:-moz-placeholder { color: red }
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a 				{ color: rgb(55,66,72); text-decoration: none }
+a:hover 	{ color: rgb(55,66,72) }
+a:focus 	{ outline: thin dotted; }
+a:hover, a:active 	{ outline: 0; }
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul, ol { margin: 0; padding: 0; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+
+legend { border: 0; *margin-left: -7px; padding: 0; }
+
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+
+button, input { line-height: normal; *overflow: visible; }
+
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+
+/* =============================================================================
+   Non-semantic helper classes
+   ========================================================================== */
+
+/* Contain floats: h5bp.com/q */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+/* =============================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+* { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; }
+a, a:visited { text-decoration: underline; }
+a[href]:after { content: " (" attr(href) ")"; }
+abbr[title]:after { content: " (" attr(title) ")"; }
+.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+thead { display: table-header-group; } /* h5bp.com/t */
+tr, img { page-break-inside: avoid; }
+img { max-width: 100% !important; }
+@page { margin: 0.5cm; }
+p, h2, h3 { orphans: 3; widows: 3; }
+h2, h3 { page-break-after: avoid; }
+}

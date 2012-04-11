@@ -1,0 +1,26 @@
+@import "test_less_import.less";
+
+.max (@a, @b) when (@a > @b) { width: @a }
+.max (@a, @b) when (@a < @b) { width: @b }
+
+.foo() {
+    top: 2px;
+}
+
+/* hello! */
+.test {
+    .transition();
+    .foo;
+    position: absolute;
+    left: 50%;
+    height: 40px;
+    cursor: pointer;
+    .max (30px, 20px);
+}
+
+.test2 {
+
+    foo: bar;
+    color: red;
+
+}
